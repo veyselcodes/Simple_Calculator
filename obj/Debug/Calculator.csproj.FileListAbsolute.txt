@@ -1,0 +1,15 @@
+C:\Users\recep\source\repos\Veysel's Calculator\Veysel's Calculator\bin\Debug\Calculator.exe.config
+C:\Users\recep\source\repos\Veysel's Calculator\Veysel's Calculator\bin\Debug\Calculator.exe
+C:\Users\recep\source\repos\Veysel's Calculator\Veysel's Calculator\bin\Debug\Calculator.pdb
+C:\Users\recep\source\repos\Veysel's Calculator\Veysel's Calculator\obj\Debug\MainWindow.g.cs
+C:\Users\recep\source\repos\Veysel's Calculator\Veysel's Calculator\obj\Debug\App.g.cs
+C:\Users\recep\source\repos\Veysel's Calculator\Veysel's Calculator\obj\Debug\Calculator_MarkupCompile.cache
+C:\Users\recep\source\repos\Veysel's Calculator\Veysel's Calculator\obj\Debug\Calculator_MarkupCompile.lref
+C:\Users\recep\source\repos\Veysel's Calculator\Veysel's Calculator\obj\Debug\MainWindow.baml
+C:\Users\recep\source\repos\Veysel's Calculator\Veysel's Calculator\obj\Debug\Calculator.g.resources
+C:\Users\recep\source\repos\Veysel's Calculator\Veysel's Calculator\obj\Debug\Veysel_s_Calculator.Properties.Resources.resources
+C:\Users\recep\source\repos\Veysel's Calculator\Veysel's Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+C:\Users\recep\source\repos\Veysel's Calculator\Veysel's Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\recep\source\repos\Veysel's Calculator\Veysel's Calculator\obj\Debug\Calculator.exe
+C:\Users\recep\source\repos\Veysel's Calculator\Veysel's Calculator\obj\Debug\Calculator.pdb
+C:\Users\recep\source\repos\Veysel's Calculator\Veysel's Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache

@@ -1,0 +1,91 @@
+﻿<Window x:Class="Veysel_s_Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Veysel_s_Calculator"
+        mc:Ignorable="d"
+        Title="Calculator" Height="360" Width="720">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <!-- Column 6 -->
+            <Button Grid.Column="6" Grid.Row="0" Content="AC" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="AC_Button_Click"/>
+            <Button Grid.Column="6" Grid.Row="1" Content="÷" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Divide_Button_Click"/>
+            <Button Grid.Column="6" Grid.Row="2" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Multiply_Button_Click">
+                <TextBlock HorizontalAlignment="Center" FontFamily="Arial" VerticalAlignment="Center">x</TextBlock>
+            </Button>
+            <Button Grid.Column="6" Grid.Row="3" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Negative_Button_Click">
+                <TextBlock HorizontalAlignment="Center" FontFamily="Arial" VerticalAlignment="Top">-</TextBlock>
+            </Button>
+            <Button Grid.Column="6" Grid.Row="4" Content="+" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Plus_Button_Click"/>
+            <!-- Column 5 -->
+            <Button Grid.Column="5" Grid.Row="0" Content="%" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Mode_Button_Click"/>
+            <Button Grid.Column="5" Grid.Row="1" Content="9" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Nine_Button_Click"/>
+            <Button Grid.Column="5" Grid.Row="2" Content="6" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Six_Button_Click"/>
+            <Button Grid.Column="5" Grid.Row="3" Content="3" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Three_Button_Click"/>
+            <Button Grid.Column="5" Grid.Row="4" Content="=" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Eq_Button_Click"/>
+            <!-- Column 4 -->
+            <Button Grid.Column="4" Grid.Row="0" Content="" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="RP_Button_Click"/>
+            <Button Grid.Column="4" Grid.Row="1" Content="8" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Eight_Button_Click"/>
+            <Button Grid.Column="4" Grid.Row="2" Content="5" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Five_Button_Click"/>
+            <Button Grid.Column="4" Grid.Row="3" Content="2" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Two_Button_Click"/>
+            <Button Grid.Column="4" Grid.Row="4" Content="." FontSize="24" FontFamily="Arial" Margin="7,7,7,7" Click="Dot_Button_Click"/>
+            <!-- Column 3 -->
+            <Button Grid.Column="3" Grid.Row="0" Content="" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="LP_Button_Click"/>
+            <Button Grid.Column="3" Grid.Row="1" Content="7" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Seven_Button_Click"/>
+            <Button Grid.Column="3" Grid.Row="2" Content="4" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Four_Button_Click"/>
+            <Button Grid.Column="3" Grid.Row="3" Content="1" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="One_Button_Click"/>
+            <Button Grid.Column="3" Grid.Row="4" Content="0" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Zero_Button_Click"/>
+            <!-- Column 2 -->
+            <Button Grid.Column="2" Grid.Row="0" Content="x!" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Factor_Button_Click"/>
+            <Button Grid.Column="2" Grid.Row="1" Content="ln" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="ln_Button_Click"/>
+            <Button Grid.Column="2" Grid.Row="2" Content="log" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="log_Button_Click"/>
+            <Button Grid.Column="2" Grid.Row="3" Content="√" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Root_Button_Click"/>
+            <Button Grid.Column="2" Grid.Row="4" Content="x^y" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Over_Button_Click"/>
+            <!-- Column 1 -->
+            <Button Grid.Column="1" Grid.Row="0" Content="Deg" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Deg_Button_Click" Name="Deg"/>
+            <Button Grid.Column="1" Grid.Row="1" Content="sin" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="sin_Button_Click"/>
+            <Button Grid.Column="1" Grid.Row="2" Content="cos" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="cos_Button_Click"/>
+            <Button Grid.Column="1" Grid.Row="3" Content="tan" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="tan_Button_Click"/>
+            <Button Grid.Column="1" Grid.Row="4" Content="EXP" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="EXP_Button_Click"/>
+            <!-- Column 0 -->
+            <Button Grid.Column="0" Grid.Row="0" FontSize="18" Content="Rad" FontFamily="Arial" Margin="7,7,7,7" Click="Rad_Button_Click" Name="Rad"/>
+            <Button Grid.Column="0" Grid.Row="1" Content="" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Inv_Button_Click"/>
+            <Button Grid.Column="0" Grid.Row="2" Content="π" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="PI_Button_Click"/>
+            <Button Grid.Column="0" Grid.Row="3" Content="e" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="e_Button_Click"/>
+            <Button Grid.Column="0" Grid.Row="4" Content="Ans" FontSize="18" FontFamily="Arial" Margin="7,7,7,7" Click="Ans_Button_Click"/>
+        </Grid>
+        <TextBox Grid.Row="0" BorderBrush="Black" BorderThickness="0" Margin="244,20,19.6,20.4" 
+                 HorizontalContentAlignment="Right" FontSize="32" VerticalContentAlignment="Bottom"
+                 Text="{Binding Path=Num1, Mode=OneWay}" Name="Display_Process"/>
+        <TextBox Grid.Row="0" BorderBrush="Black" BorderThickness="0" Margin="15,15,578.6,35.4" 
+                 HorizontalContentAlignment="Left" FontSize="24" FontStyle="Italic" VerticalContentAlignment="Top"
+                 Name="Operation_Display"/>
+        <TextBox Grid.Row="0" BorderBrush="Black" BorderThickness="0" Margin="15,64,638.6,10.4" 
+                 HorizontalContentAlignment="Left" FontSize="10" FontStyle="Oblique" FontWeight="Bold"  VerticalContentAlignment="Bottom"
+                 Name="RadOrDeg" RenderTransformOrigin="0.382,1.558">Deg</TextBox>
+        <Border HorizontalAlignment="Stretch" BorderBrush="Black" BorderThickness="1" Margin="5,5,5,5"/>
+
+    </Grid>
+</Window>
